@@ -2,17 +2,26 @@
 {
     width:auto;
     height:20px;
-    background-color:aqua;
-    color:green;
+    background-color:lightgray;
     margin-top:5px;
     float:left;
     margin-left:20px;
-    border-radius:4px;
+    border-radius:6px;
     padding:3px;
+    border:solid 1px;
+    border-color:darkgrey;
 }
 .tbutton
 {
-    width:10px;
+    width:50px;
     height:15px;
-         
+    text-decoration:none;
+    right:0px;
+    margin-left:10px;
+    color:black;
+}
+.mydiv
+{
+    width:auto;
+
 }

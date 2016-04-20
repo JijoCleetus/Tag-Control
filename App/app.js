@@ -10,6 +10,6 @@ app.controller("myController", function ($scope) {
   }
     $scope.cleartag=function()
     {
-
+        $scope.mytags.pop($scope.tag);       
     }
 });
