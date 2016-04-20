@@ -1,0 +1,18 @@
+.t
+{
+    width:auto;
+    height:20px;
+    background-color:aqua;
+    color:green;
+    margin-top:5px;
+    float:left;
+    margin-left:20px;
+    border-radius:4px;
+    padding:3px;
+}
+.tbutton
+{
+    width:10px;
+    height:15px;
+         
+}
