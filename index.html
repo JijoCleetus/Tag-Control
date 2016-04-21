@@ -39,16 +39,17 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container" ng-app="myApp" ng-controller="myController">
         <div class="row">
-            <div class="two columns">Interests</div>
-            <div class="ten columns"><input type="text" ng-model="tag" ng-keypress="addTag($event)" /><button>ADD</button></div>
+            <div class="two columns">&nbsp;</div>
+            <div class="ten columns">&nbsp;</div>
         </div>
         <div class="row">
             <div class="two columns">Interests</div>
+            <div class="ten columns"><input type="text" ng-model="tag" ng-keypress="addTag($event)" /></div>
+        </div>
+        <div class="row">
+            <div class="two columns">&nbsp;</div>
             <div class="ten columns">
-            <!--<ul>
-            <li ng-repeat="mytag in mytags">{{mytag}}</li>
-            </ul>-->
-                <div class="t" ng-repeat="mytag in mytags">{{mytag}}<a class="tbutton" href="#" ng-click="cleartag()">&times;</a></div>
+            <div class="t" ng-repeat="mytag in mytags">{{mytag}}<a class="tbutton" id="id" href="#" ng-click="cleartag(mytag)">&times;</a></div>
             </div>
         </div>
         

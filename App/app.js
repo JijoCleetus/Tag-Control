@@ -1,15 +1,19 @@
 var app = angular.module("myApp", []);
 app.controller("myController", function ($scope) {
-    $scope.mytags = [];
+    $scope.mytags = {};
     
     $scope.addTag = function (keyevent) {
         if (keyevent.which === 13) {
-            $scope.mytags.push($scope.tag);
-            $scope.tag = "";
+            if ($scope.tag != "")
+            {
+                $scope.mytags[$scope.tag] = $scope.tag;
+                $scope.tag = "";
+            }
+            
         }
   }
-    $scope.cleartag=function()
+    $scope.cleartag=function(idn)
     {
-        $scope.mytags.pop($scope.tag);       
+        delete $scope.mytags[idn];
     }
 });
